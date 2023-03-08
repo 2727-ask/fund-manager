@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "852c22d0-4eff-4d0b-9e56-b55765a613b7",
+		"name": "WU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Fund",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fundDescription\": \"nifty 50 index fund\",\n    \"bidPrice\": 500,\n    \"offerPrice\": 400,\n    \"lastUpdated\": \"2023-03-08\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest-sample/rest/funds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest-sample",
+						"rest",
+						"funds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All FUnds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest-sample/rest/funds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest-sample",
+						"rest",
+						"funds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get A Fund",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest-sample/rest/funds/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest-sample",
+						"rest",
+						"funds",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a fund",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest-sample/rest/funds/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest-sample",
+						"rest",
+						"funds",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A Fund",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest-sample/rest/funds/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest-sample",
+						"rest",
+						"funds",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
